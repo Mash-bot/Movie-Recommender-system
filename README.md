@@ -72,6 +72,8 @@ The recommender system will:
 
 ### Visualization
 
+ratings distribution.
+
 ![My Image](https://github.com/Mash-bot/Movie-Recommender-system/blob/main/images/download.png)
 
 
