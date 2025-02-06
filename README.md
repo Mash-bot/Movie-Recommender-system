@@ -34,14 +34,23 @@ The recommender system will:
 ### Necessary libraries
 
 `pandas`:data manipulation and analysis
+
 `numpy`: For numerical computing
+
 `surprise`: For building and evaluating recommender systems
+
 `Dataset from surprise`: To load datasets for recommendation tasks in surprise liblary
+
 `Reader from surprise`: To define the format and stracture of datasets
+
 `KNNWithMeans,KNNBasic,KNNBaseline,`: K-Neighbors algorithims designed for building collaborative filtering recommendation systems.
+
 `cross_validate`: to perform cross-validation on a given model
+
 `GridsearchCV`: used for hyperparameter tuning.
+
 `SVD`: a matrix factorization technique used for building recommendation systems.
+
 `matplotlib.pyplot and seaborn`: for creating interactive visualizations.
 
 ### Data description
@@ -67,8 +76,9 @@ The recommender system will:
 ### **Data Preparation for Surprise** 
 
 - Colums `userId, movieId, rating` are used 
-<!-- reader = Reader (rating_scale= (0.5, 5.0))
-data = Dataset.load_from_df(movie_rating[["userId", "movieId", "rating"]], reader) -->
+
+reader = Reader (rating_scale= (0.5, 5.0))
+data = Dataset.load_from_df(movie_rating[["userId", "movieId", "rating"]], reader)
 
 - training using `dataset = data.build_full_trainset()`
 
@@ -101,15 +111,17 @@ From the above outputs, SVD seems to be the best performing model with a test RM
 We will therefore use SVD to make predictions
 
 ### **Using SVD and to make predictions**
-<!-- svd = SVD(n_factors= 30, reg_all=0.05)
-svd.fit(dataset) -->
+
+svd = SVD(n_factors= 30, reg_all=0.05)
+svd.fit(dataset)
 
 creating a function user rating that allows a user to rate a certain number of movies on a scale from 1 to 5 or skip movies they haven’t seen
 
 ### Making predictions with the new rating
-<!-- user_ratings = pd.DataFrame(user_rating)
+
+user_ratings = pd.DataFrame(user_rating)
 new_ratings_df = pd.concat([movie_rating, user_ratings], axis=0)
-new_data = Dataset.load_from_df(new_ratings_df,reader) -->
+new_data = Dataset.load_from_df(new_ratings_df,reader)
 
 - Creating a DataFrame (user_ratings) from a list of dictionaries (user_rating).
 
@@ -119,8 +131,8 @@ new_data = Dataset.load_from_df(new_ratings_df,reader) -->
 
 ### Model training with the new data
 
-<!-- svd_ = SVD(n_factors= 30, reg_all=0.05)
-svd_.fit(new_data.build_full_trainset()) -->
+svd_ = SVD(n_factors= 30, reg_all=0.05)
+svd_.fit(new_data.build_full_trainset())
 
 - the model (svd_) is trained and ready to make predictions about how a user might rate movies they haven’t seen yet
 
