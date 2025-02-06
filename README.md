@@ -72,6 +72,8 @@ The recommender system will:
 
 ### Visualization
 
+![My Image](https://github.com/Mash-bot/Movie-Recommender-system/blob/main/images/download.png)
+
 
 ### **Data Preparation for Surprise** 
 
