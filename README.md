@@ -76,6 +76,16 @@ ratings distribution.
 
 ![My Image](https://github.com/Mash-bot/Movie-Recommender-system/blob/main/images/download.png)
 
+genre popularity.
+
+![My Image](https://github.com/Mash-bot/Movie-Recommender-system/blob/main/images/genre%20popularity.png)
+
+rating distribution by genres.
+
+![My Image](https://github.com/Mash-bot/Movie-Recommender-system/blob/main/images/rating%20distribution%20by%20genres.png)
+
+top 10 movies by average rating.
+![My Image](https://github.com/Mash-bot/Movie-Recommender-system/blob/main/images/top%2010%20movies%20by%20average%20rating.png)
 
 ### **Data Preparation for Surprise** 
 
