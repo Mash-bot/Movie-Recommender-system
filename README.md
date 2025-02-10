@@ -156,12 +156,12 @@ svd_.fit(new_data.build_full_trainset())
 
 ### **Making Recommendations**
 
-`Recommendation # 1`: The code looks for the movie title that corresponds to movieId 659, which is "The Godfather, The (1972)".
+`Recommendation # 1`: The code looks for the movie title that corresponds to movieId 277, which is "Dr. Strangelove".
 
 `Recommendation # 2`: It then looks for movieId 277, which corresponds to "The Shawshank Redemption (1994)".
 
-`Recommendation # 3`: Next, for movieId 2226, it finds "Fight Club (1999)".
+`Recommendation # 3`: for movieId 906, it finds "Lawrence of Arabia (1962)".
 
-`Recommendation # 4`: For movieId 2462, the title is "The Boondock Saints (2000)".
+`Recommendation # 4`: Next, for movieId 2226, it finds "Fight Club (1999)".
 
-`Recommendation # 5`: Finally, for movieId 906, it finds "Lawrence of Arabia (1962)".
+`Recommendation # 5`: Finally, for movieId 922, it finds " Godfather: Part II, The (1974)".
